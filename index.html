@@ -41,9 +41,10 @@
 
 <body class="font-lato">
     <header class=" mt-2">
-        <div class="navbar  bg-red-500 text-white mt-2 rounded-full">
-            <div class="navbar-start ">
-                <div class="dropdown dropdown-right">
+
+        <div class="navbar bg-base-100 text-white bg-red-500 rounded-full">
+            <div class="navbar-start">
+                <div class="dropdown  text-black">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -52,40 +53,32 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-
+                    </ul>
+                </div>
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal hidden lg:flex px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
                     </ul>
                 </div>
             </div>
-         <div class="">
-            <div class="flex justify-between flex-row-reverse">
-                <div class="flex items-center justify-center gap-3">
-                    <img src="./images/logo.png" alt="">
-                    <a class=" text-3xl font-bold ">daisyUI</a>
-                </div>
-    
-                <div class="navbar-start w-0 ">
-                    <div>
-                        <ul class=" navbar-start hidden lg:flex ">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Shop</a></li>
-                            <li><a href="">All Fruits</a></li>
-                        </ul>
-                    </div>
-                </div>
-         </div>
-           </div>
-            <div class="navbar-end  hidden lg:flex relative">
-                <a><input class="border-t-neutral-50 p-2 rounded-full" type="search" placeholder="search here"></a>
-                <a><i class="absolute right-2.5  bottom-2.5 text-slate-400 fa-solid fa-magnifying-glass"></i></a>
+            <div class=" gap-2 mx-auto">
+                <img src="./images/logo.png" alt="">
+                <h2>FruitBurst</h2>
+            </div>
+
+            <div class="navbar-end hidden lg:flex relative ">
+                <input class="p-2 rounded-full" type="search" placeholder="search here">
+                <i class="absolute right-3 top-3 text-slate-400 fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
-
     </header>
     <main>
         <!-- banner section -->
@@ -249,11 +242,11 @@
 
                         <div class="">
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="btn" onclick="my_modal_2.showModal()">Details</button>
-                            <dialog id="my_modal_2" class="modal">
+                            <button class="btn" onclick="my_modal_apple.showModal()">Details</button>
+                            <dialog id="my_modal_apple" class="modal">
                                 <form method="dialog" class="modal-box">
-                                    <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
-                                    <h3 class="font-bold text-lg">Red Dragon</h3>
+                                    <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                                    <h3 class="font-bold text-lg">Apples</h3>
                                     <p>Professional employees are there for you to pick the most amazing and fresh
                                         fruits.</p>
                                     <div class="rating flex justify-center mt">
@@ -295,12 +288,13 @@
 
                         <div class="">
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="btn" onclick="my_modal_2.showModal()">details</button>
-                            <dialog id="modal_5" class="modal">
+                            <button class="btn" onclick="my_modal_orange.showModal()">details</button>
+                            <dialog id="my_modal_orange" class="modal">
                                 <form method="dialog" class="modal-box">
-                                    <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
-                                    <h3 class="font-bold text-lg">Hello!</h3>
-                                    <p class="py-4">Press ESC key or click outside to close</p>
+                                    <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
+                                    <h3 class="font-bold text-lg">Orange</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
                                     <div class="rating flex justify-center">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -339,11 +333,13 @@
                         </div>
                         <div class="">
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="btn" onclick="my_modal_2.showModal()">details</button>
-                            <dialog id="my_modal_4" class="modal">
+                            <button class="btn" onclick="my_modal_redfruit.showModal()">details</button>
+                            <dialog id="my_modal_redfruit" class="modal">
                                 <form method="dialog" class="modal-box">
-                                    <h3 class="font-bold text-lg">Hello!</h3>
-                                    <p class="py-4">Press ESC key or click outside to close</p>
+                                    <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
+                                    <h3 class="font-bold text-lg">Red Dragon</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
                                     <div class="rating flex justify-center">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -382,12 +378,13 @@
                         </div>
                         <div class="">
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="btn" onclick="my_modal_2.showModal()">details</button>
-                            <dialog id="modal_9" class="modal-4">
+                            <button class="btn" onclick="my_modal_banana.showModal()">details</button>
+                            <dialog id="my_modal_banana" class="modal">
                                 <form method="dialog" class="modal-box">
-                                    <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
-                                    <h3 class="font-bold text-lg">Hello!</h3>
-                                    <p class="py-4">Press ESC key or click outside to close</p>
+                                    <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+                                    <h3 class="font-bold text-lg">Banana</h3>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
                                     <div class="rating flex justify-center">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -607,8 +604,8 @@
                     <a class="">About us</a>
                     <a class="">Shop</a>
                     <a class="">All Fruits</a>
-                     <a class="">Support</a>
-                     <a class="">My Account</a>
+                    <a class="">Support</a>
+                    <a class="">My Account</a>
                 </div>
             </div>
         </div>
